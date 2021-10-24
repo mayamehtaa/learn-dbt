@@ -18,9 +18,6 @@ models:
         description: "The primary key for this table"
         tests:
           - unique
-          - relationships:
-              - to: ref('my_first_dbt_model')
-              - field: id
 
   - name: snowflake_customer_purchases
     description: "Total purchases by customer"
